@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="main">
+        <h1>Sắp xếp chỉ số quảng cáo</h1>
+        <button id="buttonUpload">
+            Upload
+        </button>
+        <p id="fileName"></p>
+    </div>
+    <div id="chi_so">
+        <div>
+            <label for="chi_so_1">Chi phí trên mỗi kết quả</label>
+            <input type="text" id="chi_so_1" value="100000">
+        </div>
+        <div>
+            <label for="chi_so_1">Tần suất</label>
+            <input type="text" id="chi_so_2" value="1">
+        </div>
+        <div>
+            <label for="chi_so_1">CPM (Chi phí trên mỗi 1.000 lần hiển thị) (VND)</label>
+            <input type="text" id="chi_so_3" value="100000">
+        </div>
+        <div>
+            <label for="chi_so_1">CPC (Tất cả) (VND)</label>
+            <input type="text" id="chi_so_4" value="10000">
+        </div>
+        <div style="margin: 20px 0px;text-align: center">
+            <button id="sort">
+                Sắp xếp
+            </button>
+        </div>
+        <div id="wrapperLoader" style="display: none">
+            <div id="loader"></div>
+        </div>
+
+
+    </div>
+    <input type="file" id="fileUpload" style="display:none;" accept=".xls, .xlsx">
+    <div id="wrapper">
+        <table id="report">
+        </table>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
